@@ -14,11 +14,6 @@ class InMemoryKV implements KeyValueStorage {
     @Override
     public void set(String key, String value) {
         map.put(key, value);
-        /*if (!map.containsKey(key)) {
-            map.put(key, value);
-        } else {
-            map.replace(key, value);
-        }*/
     }
 
     @Override

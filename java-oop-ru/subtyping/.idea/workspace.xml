@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42dace4d-5c18-4301-9360-3b89ed36f430" name="Changes" comment="" />
+    <list default="true" id="42dace4d-5c18-4301-9360-3b89ed36f430" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/resources/file" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/resources/file" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/FileKV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/FileKV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exercise/InMemoryKV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exercise/InMemoryKV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/exercise/FileKVTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/exercise/FileKVTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/file" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/file" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +51,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/vasiliy/hexlet-git/subtyping&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.AppTest">
+  <component name="RunManager" selected="JUnit.FileKVTest">
     <configuration name="InMemoryKVTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -91,29 +98,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="InMemoryKVTest.mustBeImmutableTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;exercise.InMemoryKVTest.mustBeImmutableTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="subtyping.test" />
       <extension name="coverage">
@@ -124,6 +108,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="exercise" />
       <option name="MAIN_CLASS_NAME" value="exercise.AppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileKVTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="subtyping.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="exercise" />
+      <option name="MAIN_CLASS_NAME" value="exercise.FileKVTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FileKVTest" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.InMemoryKVTest" />
         <item itemvalue="Gradle.InMemoryKVTest.inMemoryKVTest" />
         <item itemvalue="Gradle.InMemoryKVTest" />
-        <item itemvalue="Gradle.InMemoryKVTest.mustBeImmutableTest" />
       </list>
     </recent_temporary>
   </component>

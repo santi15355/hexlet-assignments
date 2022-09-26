@@ -1,16 +1,16 @@
 package exercise;
 
-import java.util.HashMap;
-import org.junit.jupiter.api.BeforeEach;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import com.fasterxml.jackson.databind.ObjectMapper;
-// BEGIN
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-// END
-
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.HashMap;
+import java.util.Map;
 
 class FileKVTest {
 
@@ -24,6 +24,16 @@ class FileKVTest {
     }
 
     // BEGIN
-    
+    @Test
+    void testFile() {
+        Map<String, String> map = new HashMap<>(Map.of("test1", "testValue"));
+        KeyValueStorage file = new FileKV(filepath.toString(), map);
+        file.set("hello", "world");
+
+        String expected = "{test1=testValue, hello=world}";
+        String actual = Utils.readFile("src/test/resources/file");
+
+        Assertions.assertEquals(expected, actual);
+    }
     // END
 }
