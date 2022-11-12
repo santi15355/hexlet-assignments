@@ -1,0 +1,4 @@
+2022-11-12 23:09:20 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "ARTICLE" не найдена
+Table "ARTICLE" not found; SQL statement:
+alter table article drop constraint if exists fk_article_category_id [42102-200]
