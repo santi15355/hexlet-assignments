@@ -5,6 +5,12 @@ plugins {
   id 'com.adarshr.test-logger' version '3.0.0'
 }
 
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+  options.encoding = 'UTF-8'
+}
+
 repositories {
   mavenCentral()
 }
@@ -22,6 +28,9 @@ dependencies {
   testImplementation 'org.testcontainers:junit-jupiter:1.16.2'
   testImplementation 'org.testcontainers:testcontainers:1.16.2'
   testImplementation 'org.testcontainers:postgresql:1.16.2'
+
+  implementation 'com.fasterxml.jackson.core:jackson-annotations:2.10.5'
+
 }
 
 test {
